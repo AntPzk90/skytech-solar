@@ -244,7 +244,7 @@ form.overlay__form {
   position: relative;
 }
 .logo img{
-  width: 138px;
+  width:  138px;
   height: 86px;
 }
 @media screen and (max-width: 540px) {
