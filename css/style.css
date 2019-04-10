@@ -1186,7 +1186,7 @@ form.overlay__form {
   border: 3px solid #fff;
   outline: none;
   font-size: 0;
-  background-image: url("../img/arrow-left.png");
+  background-image: url("../img/Arrow-left.png");
   background-size: 30px 30px;
   background-position: 50%;
   background-repeat: no-repeat;
@@ -1199,7 +1199,7 @@ form.overlay__form {
 }
 .slick-next {
   right: 25px;
-  background-image: url("../img/arrow-right.png");
+  background-image: url("../img/Arrow-right.png");
 }
 .slick-prev {
   left: 25px;
