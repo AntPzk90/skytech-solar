@@ -1,0 +1,23 @@
+.partners {
+	background: rgba(196, 196, 196, 0.16);
+	padding: 40px;
+	text-align: center;
+}
+.partners__list {
+	.reset__list();
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-top: 50px;
+	@media screen and (max-width: @mobile) {
+		justify-content: center;
+	}
+}
+.partners__list li{
+	height: 60px;
+	margin: 30px;
+}
+.partners__list img{
+	height: 60px;
+	object-fit: contain;
+}

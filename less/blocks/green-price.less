@@ -1,0 +1,143 @@
+.green-price {
+	padding: 80px 0;
+	background-image: url(../../img/green-bg.png);
+	background-repeat: no-repeat;
+	background-position: 87vw;
+	padding-bottom: 30px;
+	@media screen and (max-width: @mobile){
+		padding: 40px 0;
+		padding-bottom: 0px;
+	}
+}
+.green-price__wrapper {
+	display: flex;
+	justify-content: space-between;
+	@media screen and (max-width: @tablet) {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	@media screen and (max-width: @mobile){
+		padding-top: 45px;
+	}
+}
+.info-wrapper {
+	max-width: 530px;
+	width: 60%;
+	@media screen and (max-width: @tablet) {
+		max-width: 530px;
+		width: 100%;
+	}
+}
+.info-two-wrapper {
+	max-width: 380px;
+	border: 3px solid @dark_blue;
+	padding: 10px 15px;
+	max-height: 550px;
+	border-radius: 10px;
+	@media screen and (max-width: @tablet) {
+		width: 70%;
+		margin-top: 20px;
+	}
+	@media screen and (max-width: @mobile) {
+		max-height: 600px;
+		width: 100%;
+	}
+}
+.info-two-wrapper__title{
+	line-height: 40px;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 24px;
+}
+.info-two-wrapper__title span{
+	color: #2FAD6B;
+	font-size: 20px;
+}
+.green-list {
+	.reset__list();
+}
+.green__gr-text {
+	font-size: 30px;
+	color: #2FAD6B;
+	&+p {
+		line-height: 22px;
+		font-size: 15px;
+		color: #000000;
+	}
+}
+.green__h2 {
+	font-size: 45px;
+	line-height: normal;
+	padding-left: 80px;
+	position: relative;
+	@media screen and (max-width: @mobile) {
+		font-size: 35px;
+	}
+	&::before {
+		content: '';
+		width: 60px;
+		height: 60px;
+		position: absolute;
+		background-image: url(../../img/green-energy.png);
+		left: 10px;
+		top: -10px;
+	}
+}
+.green-text {
+	font-size: 16px;
+	line-height: 22px;
+	margin-top: 20px;
+}
+.green-form {
+	max-width: 514px;
+	min-height: 216px;
+	background: rgba(0, 0, 0, 0.79);
+	border: 5px solid @dark_blue;
+	border-radius: 15px;
+	padding: 15px 30px;
+	@media screen and (max-width: @tablet) {
+		
+	}
+	@media screen and (max-width: @mobile) {
+		width: 100%;
+	}
+}
+
+.green-form-text {
+	margin: 10px 0px;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 700;
+	@media screen and (max-width: @mobile) {
+		font-size: 20px;
+	}
+}
+.green-form-text span {
+	color: @color__btn;
+}
+.green-form input {
+	border: 0;
+	height: 45.43px;
+	border-radius: 5px;
+	padding-left: 15px;
+	width: 216.65px;
+}
+.green-form__input {
+	display: flex;
+	justify-content: space-between;
+	@media screen and (max-width: @mobile) {
+		flex-wrap: wrap;
+		justify-content: center;
+		&>input {
+			margin-top: 10px;
+			width: 100%;
+		}
+	}
+
+}
+.green--btn {
+	width: 100%;
+	padding: 15px;
+	margin-top: 20px;
+}

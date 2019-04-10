@@ -1,0 +1,63 @@
+.features {
+	padding: 60px 0;
+}
+.features__h2 {
+	text-align: center;
+	@media screen and (max-width: @mobile) {
+		line-height: 30px;
+	}
+}
+.features__list {
+	.reset__list();
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: baseline;
+	margin-top: 50px;
+	@media screen and (max-width: @tablet) {
+		justify-content: space-around;
+	}
+
+}
+.features__item {
+	width: 253px;
+	position: relative;
+	margin-top: 20px;
+	&::before {
+		content: '';
+		width: 60px;
+		height: 60px;
+		background-image: url(../img/consulting.png);
+		position: absolute;
+		top: -10px;
+
+	}
+}
+.features__item:nth-child(2){
+	&::before {
+		background-image: url(../img/rul.png);
+	}
+}
+.features__item:nth-child(3){
+	&::before {
+		background-image: url(../img/paiper.png);
+	}
+}
+.features__item:nth-child(4){
+	&::before {
+		background-image: url(../img/hand_tool.png);
+	}
+}
+.features__item:nth-child(5){
+	&::before {
+		background-image: url(../img/sett.png);
+	}
+}
+.features__item:nth-child(6){
+	&::before {
+		background-image: url(../img/money.png);
+	}
+}
+.features__h3 {
+	padding-left: 80px;
+}
