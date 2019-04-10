@@ -243,6 +243,10 @@ form.overlay__form {
   padding-right: 20px;
   position: relative;
 }
+.logo img{
+  width: 138px;
+  height: 86px;
+}
 @media screen and (max-width: 540px) {
   .header__top__text {
     display: none;
