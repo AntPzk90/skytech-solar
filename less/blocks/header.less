@@ -25,11 +25,11 @@
 }
 
 .header__top__text {
-	max-width: 430px;
+	max-width: 360px;
 	font-size: 12px;
 	box-sizing: border-box;
-	padding-left: 30px;
-	padding-right: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
 	position: relative;
 	@media screen and (max-width: @mobile) {
 		display: none;
@@ -44,7 +44,13 @@
 	background-size: cover;
 	left: 0;
 } */
-
+.logo{
+	flex-basis: 138px;
+	flex-grow: 2;
+	img{
+		width: 138px;
+	}
+}
 .header__info-phone {
 	max-width: 210px;
 	min-width: 200px;
@@ -62,6 +68,11 @@
 	color: black;
 	display: inline-block;
 	margin-bottom: 10px;
+	font-weight: 600;
+}
+.header__info-phone a:hover,
+.header__info-phone a:active{
+	color: @dark_blue;
 }
 .header__info-phone::before {
 	content: '';

@@ -206,6 +206,9 @@ form.overlay__form {
   background-position: 50%;
   background-repeat: no-repeat;
 }
+.up__btn:hover {
+  background-color: #FFEB3B;
+}
 .header {
   display: flex;
   flex-direction: column;
@@ -236,16 +239,12 @@ form.overlay__form {
   }
 }
 .header__top__text {
-  max-width: 430px;
+  max-width: 360px;
   font-size: 12px;
   box-sizing: border-box;
-  padding-left: 30px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
   position: relative;
-}
-.logo img{
-  width:  138px;
-  height: 86px;
 }
 @media screen and (max-width: 540px) {
   .header__top__text {
@@ -261,6 +260,13 @@ form.overlay__form {
 	background-size: cover;
 	left: 0;
 } */
+.logo {
+  flex-basis: 138px;
+  flex-grow: 2;
+}
+.logo img {
+  width: 138px;
+}
 .header__info-phone {
   max-width: 210px;
   min-width: 200px;
@@ -284,15 +290,15 @@ form.overlay__form {
   font-weight: 600;
 }
 .header__info-phone a:hover,
-.header__info-phone a:active{
-  color: blue;
+.header__info-phone a:active {
+  color: #3b947e;
 }
 .header__info-phone::before {
   content: '';
   width: 43px;
   height: 43px;
   position: absolute;
-  background-image: url(../img/phone-header.png);
+  background-image: url(../../img/phone-header.png);
   background-repeat: no-repeat;
   left: 0;
   top: 6px;
@@ -308,7 +314,7 @@ form.overlay__form {
   }
 }
 .wrapper__bg {
-  background-image: url(../img/header-bg.png);
+  background-image: url(../../img/header-bg.png);
   min-height: 520px;
   background-size: cover;
 }
@@ -360,7 +366,9 @@ form.overlay__form {
     width: 100%;
   }
 }
-.navigation__list a:hover,
+.navigation__list a:hover {
+  color: #2FAD6B;
+}
 .navigation__list a:active,
 .navigation__list a:focus {
   color: #FFEB3B;
@@ -592,9 +600,9 @@ form.overlay__form {
 }
 .offer {
   background-color: rgba(59, 148, 126, 0.81);
-  background-image: url(../img/offer-three.png);
+  background-image: url(../../img/offer-three.png);
   background-repeat: no-repeat;
-  background-position: calc(0% - 850px) 20%;
+  background-position: calc(0% - 800px) 20%;
   padding: 80px 0;
   color: #fff;
 }
@@ -708,7 +716,7 @@ form.overlay__form {
   line-height: 24px;
 }
 .promo {
-  background-image: url(../img/promo-img.png);
+  background-image: url(../../img/promo-img.png);
   background-size: cover;
   padding: 50px 0;
   color: white;
@@ -775,7 +783,7 @@ form.overlay__form {
 }
 .green-price {
   padding: 80px 0;
-  background-image: url(../img/green-bg.png);
+  background-image: url(../../img/green-bg.png);
   background-repeat: no-repeat;
   background-position: 87vw;
   padding-bottom: 30px;
@@ -870,7 +878,7 @@ form.overlay__form {
   width: 60px;
   height: 60px;
   position: absolute;
-  background-image: url(../img/green-energy.png);
+  background-image: url(../../img/green-energy.png);
   left: 10px;
   top: -10px;
 }
@@ -964,7 +972,7 @@ form.overlay__form {
 .question {
   text-align: center;
   padding: 40px;
-  background-image: url(../img/quest-bg.jpg);
+  background-image: url(../../img/quest-bg.jpg);
   background-size: cover;
   color: white;
 }
@@ -1074,7 +1082,7 @@ form.overlay__form {
   width: 35px;
   height: 35px;
   position: absolute;
-  background-image: url(../img/phone.png);
+  background-image: url(../../img/phone.png);
   background-repeat: no-repeat;
   left: 0;
 }
@@ -1090,7 +1098,7 @@ form.overlay__form {
   width: 40px;
   height: 35px;
   position: absolute;
-  background-image: url(../img/mail.png);
+  background-image: url(../../img/mail.png);
   background-repeat: no-repeat;
   left: 0;
 }
@@ -1106,7 +1114,7 @@ form.overlay__form {
   width: 35px;
   height: 35px;
   position: absolute;
-  background-image: url(../img/map.png);
+  background-image: url(../../img/map.png);
   background-repeat: no-repeat;
   left: 0;
 }
@@ -1190,7 +1198,7 @@ form.overlay__form {
   border: 3px solid #fff;
   outline: none;
   font-size: 0;
-  background-image: url("../img/Arrow-left.png");
+  background-image: url("../img/arrow-left.png");
   background-size: 30px 30px;
   background-position: 50%;
   background-repeat: no-repeat;
@@ -1203,7 +1211,7 @@ form.overlay__form {
 }
 .slick-next {
   right: 25px;
-  background-image: url("../img/Arrow-right.png");
+  background-image: url("../img/arrow-right.png");
 }
 .slick-prev {
   left: 25px;
@@ -1280,9 +1288,6 @@ form.overlay__form {
   background-position: 50%;
   left: 0;
   top: 0;
-}
-.slogan__list-item:first-child {
-  padding-left: 100px;
 }
 .slogan__list-item:nth-child(2)::before {
   background-image: url(../img/paysistem.png);

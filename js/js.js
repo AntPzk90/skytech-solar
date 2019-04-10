@@ -98,24 +98,17 @@ $(document).ready(function(){
 	  	$("html, body").animate({scrollTop:0},300);
 	});
 	// слайдер*/
-	/*var count = 0;
-	$(".next").on("click",function(){
-		$(".live-foto").removeClass('active--img');
-		count++;
-		if(count >= $(".live-foto").length){
-			count = 0;
-		}
-		$(".live-foto").eq(count).addClass('active--img');
-	});
-	$(".prev").on("click",function(){
-		$(".live-foto").removeClass('active--img');
-		count--;
-		if(count == 0){
-			count = $(".live-foto").length-1;
-		}
-		$(".live-foto").eq(count).addClass('active--img');
-	});*/
 	$(".gallery__wrapper").slick({
-		
+		responsive: [
+			{
+				breakpoint: 540,
+			      settings: {
+			        arrows: false,
+			        centerMode: true,
+			        centerPadding: '40px',
+			        slidesToShow: 1
+			      }
+			}
+		]
 	});
 });
