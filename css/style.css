@@ -1233,6 +1233,9 @@ form.overlay__form {
     padding: 40px 0;
   }
 }
+.about-us img {
+  float: left;
+}
 .about-us__slogan {
   width: 40%;
   font-size: 24px;
