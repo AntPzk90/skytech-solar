@@ -25,6 +25,7 @@ $(document).ready(function(){
 		$("body").removeAttr('style');
 		$(".body-wrapper").removeClass('overlay');
 		$(".overlay__form").removeAttr('style');
+		$(".mini-gallery__wrapper").removeAttr('style');
 	};
 	$(".header__btn").on("click",function(evt) {
 		overlayOn(evt);
@@ -97,8 +98,40 @@ $(document).ready(function(){
 	  	var plansOffset = $("#about-us").offset().top;
 	  	$("html, body").animate({scrollTop:0},300);
 	});
+	$(".gallery-item").each(function(index) {
+		$(this).attr("data-index",index);
+	});
+	$(".title-foto").on("click", function(){
+		var galleryItemNumber = $(this).parent().attr("data-index");
+		$(".body-wrapper").addClass('overlay');
+		$(".mini-gallery__wrapper").fadeIn(200).css({"position":"fixed"});
+		$(".mini-gallery-item").each(function() {
+			var miniGalleryItemNumber = $(this).index();
+			if(galleryItemNumber == miniGalleryItemNumber){
+				$(".mini-gallery-item").removeClass('active');
+				$(".mini-gallery-item").eq(miniGalleryItemNumber).addClass('active');
+			}
+		});
+	});
+	$(".mini-gallery__close").on("click", function(evt){
+		evt.preventDefault();
+		$(".mini-gallery-item").removeClass('active');
+		$(".mini-gallery__wrapper").removeAttr("style");
+		$(".body-wrapper").removeClass("overlay");
+	})
+	$(document).on("keydown", function(evt){
+		if(evt.keyCode == 27){
+			$(".mini-gallery__close").parent().removeClass("active");
+			$(".mini-gallery__wrapper").removeAttr("style");
+			overlayOff();
+		}
+	});
 	// слайдер*/
 	$(".gallery__wrapper").slick({
+		infinite: true,
+		slidesToShow: 2,
+		slidesToScroll: 1,
+		arrows: true,
 		responsive: [
 			{
 				breakpoint: 540,
@@ -108,7 +141,43 @@ $(document).ready(function(){
 			        centerPadding: '10px',
 			        slidesToShow: 1
 			      }
+			},
+			{
+				breakpoint: 768,
+			      settings: {
+			        arrows: true,
+			        centerMode: true,
+			        centerPadding: '10px',
+			        slidesToShow: 1
+			      }
 			}
 		]
 	});
+	//mini-slider
+	$(".mini-gallery-item").each(function(index) {
+		$(this).attr("data-index",index);
+	});
+	var count = 0;
+
+	$(".next").on("click",function(){
+		var parentItemIndex = $(this).parent().attr("data-index");
+		$(".mini-gallery-item").eq(parentItemIndex).find(".live-foto").removeClass('active--img');
+		var fotoCollection = $(".mini-gallery-item").eq(parentItemIndex).find(".live-foto");
+		count++;
+		if(count >= fotoCollection.length){
+			count = 0;
+		}
+		fotoCollection.eq(count).addClass('active--img');
+	});
+	$(".prev").on("click",function(){
+		var parentItemIndex = $(this).parent().attr("data-index");
+		$(".mini-gallery-item").eq(parentItemIndex).find(".live-foto").removeClass('active--img');
+		var fotoCollection = $(".mini-gallery-item").eq(parentItemIndex).find(".live-foto");
+		count--;
+		if(count == 0){
+			count = fotoCollection.length-1;
+		}
+		fotoCollection.eq(count).addClass('active--img');
+	});
+	//var count = 0;
 });

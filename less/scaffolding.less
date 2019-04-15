@@ -176,7 +176,14 @@ form.overlay__form{
 	background-size: 30px 30px;
 	background-position: 50%;
 	background-repeat: no-repeat;
+	@media screen and (max-width: @mobile){
+		bottom: 10px;
+		right: 10px;
+	}
 }
 .up__btn:hover{
 	background-color: @yellow;
+}
+.map-iframe{
+	width: 100%;
 }

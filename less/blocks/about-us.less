@@ -4,6 +4,38 @@
 	@media screen and (max-width: @mobile) {
 		padding: 40px 0;
 	}
+}
+.abou-us__form-wrapper{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 0;
+	@media screen and (max-width: @tablet) {
+		flex-direction: column;
+	}
+	.green-form{
+		max-width: 320px;
+		height: 400px;
+		width: 100%;
+		@media screen and (max-width: @tablet) {
+			height: 440px;
+		}
+		textarea{
+		border: 0;
+		border-radius: 5px;
+		padding-left: 15px;
+		padding-top: 20px;
+		width: 100%;
+		resize: none;
+		}
+	}
+}
+.about-us__dscr{
+	width: 62%;
+	@media screen and (max-width: @tablet) {
+		width: 100%;
+	}
+	text-align: left;
 	img{
 		float: left;
 	}
@@ -27,6 +59,7 @@
 .slogan__list{
 	display: flex;
 	justify-content: space-around;
+	flex-wrap: wrap;
 	.reset__list();
 	@media screen and (max-width: @tablet) {
 		flex-direction: column;
@@ -35,6 +68,8 @@
 }
 .slogan__list-item{
 	width: 300px;
+	min-height: 62px;
+	margin-bottom: 15px;
 	font-weight: bold;
 	font-size: 18px;
 	padding-left: 80px;
@@ -63,4 +98,10 @@
 }
 .slogan__list-item:nth-child(3)::before {
 	background-image: url(../img/timeclock.png);
+}
+.slogan__list-item:nth-child(4)::before {
+	background-image: url(../img/finger.png);
+}
+.slogan__list-item:nth-child(5)::before {
+	background-image: url(../img/services.png);
 }
