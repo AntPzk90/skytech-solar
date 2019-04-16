@@ -260,15 +260,6 @@ form.overlay__form {
     display: none;
   }
 }
-/* .header__top__text::before {
-	content: '';
-	width: 50px;
-	height: 50px;
-	position: absolute;
-	background-image: url(../../img/sun.png);
-	background-size: cover;
-	left: 0;
-} */
 .logo {
   flex-basis: 138px;
   flex-grow: 2;
@@ -375,9 +366,7 @@ form.overlay__form {
     width: 100%;
   }
 }
-.navigation__list a:hover {
-  color: #2FAD6B;
-}
+.navigation__list a:hover,
 .navigation__list a:active,
 .navigation__list a:focus {
   color: #FFEB3B;
@@ -626,10 +615,10 @@ form.overlay__form {
 }
 @media screen and (max-width: 540px) {
   .offer__img {
-    height: 140px;
-    width: 140px;
+    height: 100px;
+    width: 100px;
     position: absolute;
-    top: 0;
+    top: 20px;
     right: 0;
   }
 }
