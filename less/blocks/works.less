@@ -55,18 +55,64 @@
 	border:3px solid #fff;
 	outline: none;
 	font-size:0; 
-	background-image: url("../img/arrow-left.png");
+	/* background-image: url("../img/arrow-left.png");
 	background-size: 30px 30px;
 	background-position: 50%;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat; */
 	@media screen and (max-width: @mobile) {
 		display: none;
 	}
 }
+.slick-prev::before{
+	content:"";
+	display: block;
+	width: 21px;
+	height: 3px;
+	transform: rotate(-45deg);
+	position: absolute;
+	top: 19px;
+	left: 15px;
+	z-index: 3;
+	background-color:#fff;
+}
+.slick-prev::after{
+	content:"";
+	display: block;
+	width: 21px;
+	height: 3px;
+	transform: rotate(45deg);
+	position: absolute;
+	bottom: 19px;
+	left: 15px;
+	z-index: 3;
+	background-color:#fff;
+}
 .slick-next{
 	right: 0px;
-	background-image: url("../img/arrow-right.png");
-
+}
+.slick-next::before{
+	content:"";
+	display: block;
+	width: 21px;
+	height: 3px;
+	transform: rotate(45deg);
+	position: absolute;
+	top: 19px;
+	right: 15px;
+	z-index: 3;
+	background-color:#fff;
+}
+.slick-next::after{
+	content:"";
+	display: block;
+	width: 21px;
+	height: 3px;
+	transform: rotate(-45deg);
+	position: absolute;
+	bottom: 19px;
+	right: 15px;
+	z-index: 3;
+	background-color:#fff;
 }
 .slick-prev{
 	left: 0px;
@@ -127,10 +173,13 @@
 	outline: none;
 	font-size:0; 
 	border: none;
-	background-image: url("../img/arrow-left.png");
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* background-image: url("../img/arrow-left.png");
 	background-size: 30px 30px;
 	background-position: 50%;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat; */
 }
 .next{
 	position: absolute;
@@ -143,10 +192,13 @@
 	outline: none;
 	font-size:0; 
 	border: none;
-	background-image: url("../img/arrow-right.png");
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* background-image: url("../img/arrow-right.png");
 	background-size: 30px 30px;
 	background-position: 50%;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat; */
 }
 .gallery-item__dscr{
 	box-sizing: border-box;
