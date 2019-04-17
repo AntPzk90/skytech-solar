@@ -12,6 +12,7 @@
 .green-price__wrapper {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	@media screen and (max-width: @tablet) {
 		flex-wrap: wrap;
 		justify-content: center;
@@ -151,4 +152,33 @@
 	width: 100%;
 	padding: 15px;
 	margin-top: 20px;
+}
+.info__table{
+	width: 100%;
+	border-collapse: collapse;
+	margin: 20px auto;
+	tr:first-child{
+		border-bottom:2px solid @dark_blue;
+		font-weight: bold;
+		font-size: 22px;
+	}
+	tr{
+		border-bottom:2px solid @dark_blue;
+	}
+	th{
+		padding: 15px;
+		text-transform: uppercase;
+	}
+	tr:nth-child(even){
+		background-color: @color__btn;
+		font-weight: bold;
+		color: #fff;
+	}
+	tr:nth-child(odd){
+		font-weight: bold;
+	}
+	td{
+		padding: 15px;
+		text-align: center;
+	}
 }

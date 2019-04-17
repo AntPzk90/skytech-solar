@@ -798,6 +798,7 @@ form.overlay__form {
 .green-price__wrapper {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 @media screen and (max-width: 768px) {
   .green-price__wrapper {
@@ -952,6 +953,35 @@ form.overlay__form {
   width: 100%;
   padding: 15px;
   margin-top: 20px;
+}
+.info__table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px auto;
+}
+.info__table tr:first-child {
+  border-bottom: 2px solid #3b947e;
+  font-weight: bold;
+  font-size: 22px;
+}
+.info__table tr {
+  border-bottom: 2px solid #3b947e;
+}
+.info__table th {
+  padding: 15px;
+  text-transform: uppercase;
+}
+.info__table tr:nth-child(even) {
+  background-color: #3cbbc6;
+  font-weight: bold;
+  color: #fff;
+}
+.info__table tr:nth-child(odd) {
+  font-weight: bold;
+}
+.info__table td {
+  padding: 15px;
+  text-align: center;
 }
 .partners {
   background: rgba(196, 196, 196, 0.16);
