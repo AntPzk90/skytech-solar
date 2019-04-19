@@ -1,4 +1,27 @@
 $(document).ready(function(){
+
+	$('form').submit(function(e) {
+		e.preventDefault();
+		var th = $(this);
+		$.ajax({
+			url: 'mail.php',
+			type: 'POST',
+			data: th.serialize(),
+		}).done(function(){
+			
+			$('.modal__pop').fadeIn();
+			$('.modal__pop-close').on('click', function() {
+				$('.modal__pop').fadeOut();
+			})
+			setTimeout(function(){$('.modal__pop').fadeOut(500)}, 2000);
+			$("body").removeAttr('style');
+			$(".body-wrapper").removeClass('overlay');
+			$(".overlay__form").removeAttr('style');
+			th.trigger('reset');
+		})
+		
+	});
+
 	//открытие и закрыытие моб меню
 	$(".nav__humburger").on("click", function(evt) {
 		evt.preventDefault();
@@ -43,7 +66,6 @@ $(document).ready(function(){
 	var header =  $(".navigation");
 	var headHeight = header.height();
 	var headerTopHeight = $(".header__top").height();
-	console.log(headerTopHeight)
 	$(window).on("scroll", function(){
 		var scroll =  $(window).scrollTop();
 	   if(scroll > headHeight){

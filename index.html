@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,7 +12,7 @@
 		<div class="container">
 			<section class="header__top">
 				<a href="#" class="logo">
-					<img src="img/Solar.jpg" width="138" height="86"> 
+					<img src="img/Solar.jpg" width="138" height="86" alt="logo"> 
 				</a>
 				<p class="header__top__text">Солнечные панели, коллектора, домашние электространции и др
 				Консультации, Подбор, Проектирование, Монтаж, Обслуживание</p>
@@ -31,7 +31,7 @@
 					</button>
 					<div class="container">
 						<ul class="navigation__list">
-							<li class="navigation__item mobi__tel"><a href="tel:+380994443485">+38 (099) 444 34 85</</li>
+							<li class="navigation__item mobi__tel"><a href="tel:+380994443485">+38 (099) 444 34 85</a></li>
 							<li class="navigation__item mobi__tel"><a href="tel:+380684222837">+38 (068) 422 28 37</a></li>
 							<li class="navigation__item"><a href="" id="green-link">Зеленый тариф</a></li>
 							<li class="navigation__item"><a href="" id="works-link">Что мы делаем</a></li>
@@ -52,11 +52,15 @@
 							</p>
 						</div>
 						<div class="right-column">
-							<form action="" class="form__header form">
+							<form class="form__header form">
 								<p class="form-text">заказать <span>бесплатный</span>
 								расчёт стоимости</p>
-								<input type="text" placeholder="Ваше имя">
-								<input type="text" placeholder="Ваш телефон">
+								<input type="hidden" name="project_name" value="Sollar">
+								<input type="hidden" name="admin_email" value="Skytechsolar@email.ua">
+								<input type="hidden" name="form_subject" value="Заявка с сайта">
+
+								<input type="text" placeholder="Ваше имя" name="Имя" required>
+								<input type="text" placeholder="Ваш номер" name="Телефон" pattern="[\+0-9]{10,13}" required>
 								<button type="submit" class="header__form-btn btn">Заказать расчёт</button>
 							</form>
 						</div>
@@ -88,7 +92,7 @@
 				право продавать избыток производимой электроэнергии энергоснабжающей компании по
 				тарифам, приведенным ниже.</p>
 				<div class="green-img__wrapper">
-					<img src="img/greentarif.jpg" class="green-img">
+					<img src="img/greentarif.jpg" class="green-img" alt="green-tarif-foto">
 				</div>
 			</div>
 			<div class="info-two-wrapper">
@@ -105,11 +109,15 @@
 					</p>
 				</div>
 
-				<form action="" class="green-form">
+				<form class="green-form">
 					<p class="green-form-text">Просчитать стоимость <span>Зелёного тарифа</span></p>
 					<div class="green-form__input">
-						<input type="text" placeholder="Ваше имя">
-						<input type="text" placeholder="Ваш телефон">
+						<input type="hidden" name="project_name" value="Sollar">
+						<input type="hidden" name="admin_email" value="Skytechsolar@email.ua">
+						<input type="hidden" name="form_subject" value="Заявка с сайта">
+
+						<input type="text" placeholder="Ваше имя" name="Имя" required>
+						<input type="text" placeholder="Ваш номер" name="Телефон" pattern="[\+0-9]{10,13}" required>
 					</div>
 					<button type="submit" class="btn green--btn">Заказать расчёт</button>
 				</form>
@@ -292,25 +300,25 @@
 
 			<div class="mini-gallery__wrapper">
 				<div class="mini-gallery-item">
-					<button class="prev">prev<img src="img/Arrow-left.png"></button>
+					<button class="prev">prev<img src="img/Arrow-left.png" alt="arrow-icon"></button>
 					<img src="img/obj_1/IMG_6373-min.JPG" alt="foto" class="live-foto active--img">
 					<img src="img/obj_1/IMG_6381-min.JPG" alt="foto" class="live-foto">
 					<img src="img/obj_1/IMG_6428-min.JPG" alt="foto" class="live-foto">
 					<img src="img/obj_1/IMG_6439-min.JPG" alt="foto" class="live-foto">
 					<img src="img/obj_1/IMG_6443-min.JPG" alt="foto" class="live-foto">
-					<button class="next">next<img src="img/Arrow-right.png"></button>
+					<button class="next">next<img src="img/Arrow-right.png" alt="arrow-icon"></button>
 				</div>
 				<div class="mini-gallery-item">
-					<button class="prev">prev<img src="img/Arrow-left.png"></button>
+					<button class="prev">prev<img src="img/Arrow-left.png" alt="arrow-icon"></button>
 					<img src="img/obj_2/IMG_5462-min.JPG" alt="foto" class="live-foto active--img">
 					<img src="img/obj_2/IMG_5480-min.JPG" alt="foto" class="live-foto">
 					<img src="img/obj_2/IMG_5482-min.JPG" alt="foto" class="live-foto">
 					<img src="img/obj_2/IMG_5485-min.JPG" alt="foto" class="live-foto">
 					<img src="img/obj_2/IMG_5553-min.JPG" alt="foto" class="live-foto">
-					<button class="next">next<img src="img/Arrow-right.png"></button>
+					<button class="next">next<img src="img/Arrow-right.png" alt="arrow-icon"></button>
 				</div>
 				<div class="mini-gallery-item">
-					<button class="prev">prev<img src="img/Arrow-left.png"></button>
+					<button class="prev">prev<img src="img/Arrow-left.png" alt="arrow-icon"></button>
 					<img src="img/obj_3/IMG_6046-min.JPG" alt="foto" class="live-foto active--img">
 					<img src="img/obj_3/IMG_6189-min.JPG" alt="foto" class="live-foto">
 					<img src="img/obj_3/IMG_6196-min.JPG" alt="foto" class="live-foto">
@@ -318,10 +326,10 @@
 					<img src="img/obj_3/IMG_6222-min.JPG" alt="foto" class="live-foto">
 					<img src="img/obj_3/IMG_6266-min.JPG" alt="foto" class="live-foto">
 					<img src="img/obj_3/IMG_6268-min.JPG" alt="foto" class="live-foto">
-					<button class="next">next<img src="img/Arrow-right.png"></button>
+					<button class="next">next<img src="img/Arrow-right.png" alt="arrow-icon"></button>
 				</div>
 				<div class="mini-gallery-item">
-					<button class="prev">prev<img src="img/Arrow-left.png"></button>
+					<button class="prev">prev<img src="img/Arrow-left.png" alt="arrow-icon"></button>
 					<img src="img/obj_4/IMG_8754-min.JPG" alt="foto" class="live-foto active--img">
 					<img src="img/obj_4/IMG_8785-min.JPG" alt="foto" class="live-foto">
 					<img src="img/obj_4/IMG_8788-min.JPG" alt="foto" class="live-foto">
@@ -329,17 +337,17 @@
 					<img src="img/obj_4/IMG_8838-min.JPG" alt="foto" class="live-foto">
 					<img src="img/obj_4/IMG_8840-min.JPG" alt="foto" class="live-foto">
 					<img src="img/obj_4/IMG_8842-min.JPG" alt="foto" class="live-foto">
-					<button class="next">next<img src="img/Arrow-right.png"></button>
+					<button class="next">next<img src="img/Arrow-right.png" alt="arrow-icon"></button>
 				</div>
 				<div class="mini-gallery-item">
-					<button class="prev">prev<img src="img/Arrow-left.png"></button>
+					<button class="prev">prev<img src="img/Arrow-left.png" alt="arrow-icon"></button>
 					<img src="img/obj_5/IMG_6962-min.JPG" alt="foto" class="live-foto active--img">
 					<img src="img/obj_5/IMG_6963-min.JPG" alt="foto" class="live-foto">
 					<img src="img/obj_5/IMG_6966-min.JPG" alt="foto" class="live-foto">
 					<img src="img/obj_5/IMG_6980-min.JPG" alt="foto" class="live-foto">
 					<img src="img/obj_5/IMG_6987-min.JPG" alt="foto" class="live-foto">
 					<img src="img/obj_5/IMG_6994-min.JPG" alt="foto" class="live-foto">
-					<button class="next">next<img src="img/Arrow-right.png"></button>
+					<button class="next">next<img src="img/Arrow-right.png" alt="arrow-icon"></button>
 				</div>
 				<button class="mini-gallery__close">close</button>
 			</div>
@@ -356,7 +364,7 @@
 				<p class="offer__text">Это станция, которая работает совместно с сетью. Принцип ее работы сводится к следующему:  поток солнечной энергии попадая на фотоэлементы солнечной панели преобразуется в электрическую энергию. С помощью инвертора постоянное напряжение от панелей преобразуется в переменное напряжение частотой 50Гц, с последующим распределением электроэнергии потребителю и в электросеть по «Зеленому» тарифу.
 				</p>
 			</div>
-			<div class="offer__img"><img src="img/offer-1.png" alt=""></div>
+			<div class="offer__img"><img src="img/offer-1.png" alt="foto"></div>
 		</li>
 		<li>
 			<div class="ofer__info-column">
@@ -365,7 +373,7 @@
 
 				</p>
 			</div>
-			<div class="offer__img"><img src="img/offer-2.jpg" alt=""></div>
+			<div class="offer__img"><img src="img/offer-2.jpg" alt="foto"></div>
 		</li>
 		<li>
 			<div class="ofer__info-column">
@@ -373,7 +381,7 @@
 				<p class="offer__text">Универсальная система, которая обеспечит Ваш дом автономным электроснабжением, а также даст возможность продавать выработанную электроэнергию в электросеть по «Зеленому» тарифу.
 				</p>
 			</div>
-			<div class="offer__img"><img src="img/offer-3.jpg" alt=""></div>
+			<div class="offer__img"><img src="img/offer-3.jpg" alt="foto"></div>
 		</li>
 		</ul>
 		<div class="after__block">
@@ -389,11 +397,15 @@
 				<p class="about-us__dscr"> 
 				Компания Skytech Solar входит в группу компаний  Skytech. Уже более 10 лет мы являемся надежным поставщиком и производителем широкой группы товаров: упаковочных материалов, складской и спец. техники, инженерных и конструкционных пластиков, упаковочного и фасовочного оборудования, запчастей для агро техники, с/х оборудования для посева, полива и обработки земли.  Наша цель – работа на качество, а не количество. Приобретая любую продукцию у  Skytech вы всегда уверены в ее высочайшем качестве. Наша компания всегда идет в ногу со временем, используя как современные материалы, так и технологии производства. Именно поэтому был создан  Skytech Solar.  Главной целью Skytech Solar является продвижение среди населения альтернативных источников энергии, в частности, солнечных батарей. Мы первые в Украине ставим основной задачей не просто помощь населению в переходе на ЭКО энергию, а помогаем сделать этот переход максимально легким, быстрым и доступным. Skytech Solar это дружная команда профессионалов, включающая опытных техников, юристов и квалифицированных менеджеров, которые помогут решить весь комплекс вопросов, которые возникают у наших клиентов при желании воспользоваться «Зеленым тарифом».
 			</p>
-				<form action="" class="green-form">
+				<form class="green-form">
 					<p class="green-form-text">Просчитать стоимость <span>Зелёного тарифа</span></p>
 					<div class="green-form__input">
-						<input type="text" placeholder="Ваше имя">
-						<input type="text" placeholder="Ваш телефон">
+						<input type="hidden" name="project_name" value="Sollar">
+						<input type="hidden" name="admin_email" value="Skytechsolar@email.ua">
+						<input type="hidden" name="form_subject" value="Заявка с сайта">
+
+						<input type="text" placeholder="Ваше имя" name="Имя" required>
+						<input type="text" placeholder="Ваш номер" name="Телефон" pattern="[\+0-9]{10,13}" required>
 					</div>
 					<textarea name="massege" placeholder="Напишите ваше сообщение" rows="5"></textarea>
 					<button type="submit" class="btn green--btn">Заказать расчёт</button>
@@ -425,10 +437,14 @@
 				Готовы начать <span>зарабатывать</span> на электричестве?
 			</h2>
 			<p class="promo__text">Оставьте свои данные и мы вам <span>перезвоним</span> уже сегодня</p>
-			<form action="" class="promo__form">
+			<form class="promo__form">
 			<div class="form-input__wrapp">
-				<input type="text" placeholder="Ваше имя">
-				<input type="text" placeholder="Ваш телефон">
+				<input type="hidden" name="project_name" value="Sollar">
+				<input type="hidden" name="admin_email" value="Skytechsolar@email.ua">
+				<input type="hidden" name="form_subject" value="Заявка с сайта">
+
+				<input type="text" placeholder="Ваше имя" name="Имя" required>
+				<input type="text" placeholder="Ваш номер" name="Телефон" pattern="[\+0-9]{10,13}" required>
 			</div>
 			<button type="submit" class="btn btn--promo">Начать зарабатывать</button>
 		</form>
@@ -484,18 +500,22 @@
 		<div class="auestion__wrapper container">
 			<h2 class="quest__h2">Остались вопросы?</h2>
 			
-			<form action="" class="quest-form">
+			<form class="quest-form">
 					<p class="question__text">Заполните форму и мы перезвоним вам, в ближайшее врем</p>
 					<div class="quest-form__input">
-						<input type="text" placeholder="Ваше имя">
-						<input type="text" placeholder="Ваш телефон">
+						<input type="hidden" name="project_name" value="Sollar">
+						<input type="hidden" name="admin_email" value="Skytechsolar@email.ua">
+						<input type="hidden" name="form_subject" value="Заявка с сайта">
+
+						<input type="text" placeholder="Ваше имя" name="Имя" required>
+						<input type="text" placeholder="Ваш номер" name="Телефон" pattern="[\+0-9]{10,13}" required>
 					</div>
 					<button type="submit" class="btn quest--btn">Заказать расчёт</button>
 				</form>
 		</div>
 	</section>
 	<section class="map" id="map">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1337.1702020462071!2d33.34443915813424!3d47.91045056750823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dadf4c4a18b455%3A0x52954724c7426c50!2z0L_RgNC-0YHQvy4g0JrQsNGA0LvQsCDQnNCw0YDQutGB0LAsIDQ5LCDQmtGA0LjQstC-0Lkg0KDQvtCzLCDQlNC90LXQv9GA0L7Qv9C10YLRgNC-0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgNTAwMDA!5e0!3m2!1sru!2sua!4v1555243539409!5m2!1sru!2sua" height="450" frameborder="0" style="border:0" allowfullscreen class="map-iframe"></iframe>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1337.1702020462071!2d33.34443915813424!3d47.91045056750823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dadf4c4a18b455%3A0x52954724c7426c50!2z0L_RgNC-0YHQvy4g0JrQsNGA0LvQsCDQnNCw0YDQutGB0LAsIDQ5LCDQmtGA0LjQstC-0Lkg0KDQvtCzLCDQlNC90LXQv9GA0L7Qv9C10YLRgNC-0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgNTAwMDA!5e0!3m2!1sru!2sua!4v1555243539409!5m2!1sru!2sua" height="450" style="border:0" allowfullscreen class="map-iframe"></iframe>
 	</section>
 	<footer class="footer">
 		<div class="container">
@@ -509,7 +529,7 @@
 				</li>
 				<li>
 					<b class="list-text">Почта:</b>
-					<p class="text-descript"><a href="" class="footer__link-email">SkytechSolarUA@gmail.com</a></p>
+					<p class="text-descript"><a href="mailto:Skytechsolar@email.ua" class="footer__link-email">Skytechsolar@email.ua</a></p>
 				</li>
 				<li>
 					<b class="list-text">Наш Адрес:</b>
@@ -521,14 +541,26 @@
 	<button class="up__btn"></button>
 	<div class="body-wrapper">
 	</div>
-	<form action="" class="form__header overlay__form">
-		<span href="#" class="popup-close" tabindex="0"></span>
+	<form class="form__header overlay__form">
+		<span class="popup-close" tabindex="0"></span>
 		<p class="form-text">заказать <span>бесплатный</span>
 		расчёт стоимости</p>
-		<input type="text" placeholder="Ваше имя">
-		<input type="text" placeholder="Ваш телефон">
+		<input type="hidden" name="project_name" value="Sollar">
+		<input type="hidden" name="admin_email" value="Skytechsolar@email.ua">
+		<input type="hidden" name="form_subject" value="Заявка с сайта">
+
+		<input type="text" placeholder="Ваше имя" name="Имя" required>
+		<input type="text" placeholder="Ваш номер" name="Телефон" pattern="[\+0-9]{10,13}" required>
 		<button type="submit" class="header__form-btn btn">Заказать расчёт</button>
 	</form>
+
+	<div class="modal__pop">
+		<span class="modal__pop-close">закрыть</span>
+		<p class="modal__pop-text">
+			Спасибо за заявку<br>
+			Наши менеджеры с вами свяжутся!
+		</p>
+	</div>
 	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="slick/slick.min.js"></script>
 	<script type="text/javascript" src="js/js.js"></script>
